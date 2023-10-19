@@ -9,9 +9,10 @@ import (
 )
 
 type Hit struct {
-	Title  string `json:"title"`
-	URL    string `json:"url"`
-	Points int    `json:"points"`
+	Title     string `json:"title"`
+	URL       string `json:"url"`
+	Points    int    `json:"points"`
+	StoryText string `json:"story_text"`
 }
 
 type HnResponse struct {
