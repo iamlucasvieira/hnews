@@ -42,3 +42,17 @@ changelog:
     exclude:
       - "^docs:"
       - "^test:"
+
+brews:
+  - name: hnews
+    repository:
+      owner: iamlucasvieira
+      name: homebrew-hnews
+    description: "Hacker News in your terminal"
+    homepage: "https://github.com/iamlucasvieira/hnews"
+    license: "MIT"
+    commit_author:
+      name: goreleaserbot
+      email: lucas6eng@gmail.com
+    commit_msg_template: "Brew formula update for {{ .ProjectName }} version {{ .Tag }}"
+    folder: Formula
