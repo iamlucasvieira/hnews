@@ -18,14 +18,10 @@ type HnResponse struct {
 	Hits []Hit `json:"hits"`
 }
 
-type api struct {
-	url urlHandler
-}
+type api struct{}
 
 func getApi() api {
-	return api{
-		url: getHnUrl(),
-	}
+	return api{}
 }
 
 func (a api) request(url string) (HnResponse, error) {
@@ -49,8 +45,13 @@ func (a api) request(url string) (HnResponse, error) {
 		return HnResponse{}, getErr
 	}
 
-	// Close response body
-	defer res.Body.Close()
+	// Close response body at end of function
+	defer func() {
+		err := res.Body.Close()
+		if err != nil {
+			fmt.Println("Error closing response body:", err)
+		}
+	}()
 
 	// Read response body
 	body, readErr := io.ReadAll(res.Body)
@@ -66,15 +67,4 @@ func (a api) request(url string) (HnResponse, error) {
 		return HnResponse{}, err
 	}
 	return response, nil
-}
-
-func (a api) resetAndRequest() (HnResponse, error) {
-	urlCopy := a.url.string()
-	a.url.reset()
-	return a.request(urlCopy)
-}
-
-func (a api) topStories() (HnResponse, error) {
-	a.url.topStories()
-	return a.resetAndRequest()
 }

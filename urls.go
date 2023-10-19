@@ -53,7 +53,7 @@ func (u hnUrl) newStories() {
 
 // getHnUrl returns a hnUrl struct
 func getHnUrl() *hnUrl {
-	parsedUrl, err := url.Parse("http://hn.algolia.com/api/v1/search?/")
+	parsedUrl, err := url.Parse("http://hn.algolia.com/api/v1/search")
 	if err != nil {
 		fmt.Println(err)
 	}
