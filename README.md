@@ -1,12 +1,9 @@
 <a name="readme-top"></a>
 
-
 [![Release][release-shield]][release-url]
 ![Build][build-shield]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -28,8 +25,6 @@
     <a href="https://github.com/iamlucasvieira/hnews/issues">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -57,25 +52,24 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
+
 Hnews is a simple [Hacker News][hn-url] front page reader on your terminal.
 
 ![hnews-demo][product-demo]
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
+
 [![go][go]][go-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get `hnews` up and running follow these simple steps.
@@ -83,10 +77,11 @@ To get `hnews` up and running follow these simple steps.
 ### Installation
 
 #### MacOS (Homebrew)
+
 For MacOS users, you can install `hnews` using [Homebrew](https://brew.sh/).
+
 ```sh
-brew tap iamlucasvieira/hnews
-brew install hnews
+brew install iamlucasvieira/tap/hnews
 ```
 
 #### Windows/Linux/MacOS (Go)
@@ -97,24 +92,20 @@ You can also install `hnews` using [Go](https://golang.org/).
 go install github.com/iamlucasvieira/hnews@latest
 ```
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 With `hnews` installed, you only need to run the command `hnews` on your terminal.
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ROADMAP -->
+
 ## Roadmap
+
 - [ ] Add searching feature
 - [ ] Add time machine feature, allowing to see the front page of a specific date
 - [ ] Add page with comments of a specific post
@@ -123,10 +114,10 @@ See the [open issues](https://github.com/iamlucasvieira/hnews/issues) for a full
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
+
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
@@ -138,18 +129,16 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
 Lucas Vieira dos Santos - [Email](mailto:lucas6eng@gmail.com)
@@ -158,19 +147,17 @@ Project Link: [https://github.com/iamlucasvieira/hnews](https://github.com/iamlu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
 
-* [Charmbracelet](https://charm.sh/): Only with their amazing [bubbletea](https://github.com/charmbracelet/bubbletea) framework I was able to make `hnews look so good.
+- [Charmbracelet](https://charm.sh/): Only with their amazing [bubbletea](https://github.com/charmbracelet/bubbletea) framework I was able to make `hnews look so good.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [license-shield]: https://img.shields.io/github/license/iamlucasvieira/hnews?style=for-the-badge
 [license-url]: https://github.com/iamlucasvieira/hnews/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
