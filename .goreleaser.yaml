@@ -47,7 +47,7 @@ brews:
   - name: hnews
     repository:
       owner: iamlucasvieira
-      name: homebrew-hnews
+      name: homebrew-tap
     description: "Hacker News in your terminal"
     homepage: "https://github.com/iamlucasvieira/hnews"
     license: "MIT"
